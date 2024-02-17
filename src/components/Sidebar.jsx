@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DragAndDrop from "./DragAndDrop";
 
 const Sidebar = () => {
     const [toggle, setToggle] = useState(false);
@@ -10,25 +11,25 @@ const Sidebar = () => {
             <i className="lni lni-grid-alt"></i>
           </button>
           <div className="sidebar-logo">
-            <a href="#">CodzSword</a>
+            <a href="/">CodzSword</a>
           </div>
         </div>
         <ul className="sidebar-nav">
           <li className="sidebar-item">
-            <a href="#" className="sidebar-link">
+            <a href="/" className="sidebar-link">
               <i className="lni lni-user"></i>
               <span>Profile</span>
             </a>
           </li>
           <li className="sidebar-item">
-            <a href="#" className="sidebar-link">
+            <a href="/" className="sidebar-link">
               <i className="lni lni-agenda"></i>
               <span>Task</span>
             </a>
           </li>
           <li className="sidebar-item">
             <a
-              href="#"
+              href="/"
               className="sidebar-link collapsed has-dropdown"
               data-bs-toggle="collapse"
               data-bs-target="#auth"
@@ -44,12 +45,12 @@ const Sidebar = () => {
               data-bs-parent="#sidebar"
             >
               <li className="sidebar-item">
-                <a href="#" className="sidebar-link">
+                <a href="/" className="sidebar-link">
                   Login
                 </a>
               </li>
               <li className="sidebar-item">
-                <a href="#" className="sidebar-link">
+                <a href="/" className="sidebar-link">
                   Register
                 </a>
               </li>
@@ -57,7 +58,7 @@ const Sidebar = () => {
           </li>
           <li className="sidebar-item">
             <a
-              href="#"
+              href="/"
               className="sidebar-link collapsed has-dropdown"
               data-bs-toggle="collapse"
               data-bs-target="#multi"
@@ -74,7 +75,7 @@ const Sidebar = () => {
             >
               <li className="sidebar-item">
                 <a
-                  href="#"
+                  href="/"
                   className="sidebar-link collapsed"
                   data-bs-toggle="collapse"
                   data-bs-target="#multi-two"
@@ -88,12 +89,12 @@ const Sidebar = () => {
                   className="sidebar-dropdown list-unstyled collapse"
                 >
                   <li className="sidebar-item">
-                    <a href="#" className="sidebar-link">
+                    <a href="/" className="sidebar-link">
                       Link 1
                     </a>
                   </li>
                   <li className="sidebar-item">
-                    <a href="#" className="sidebar-link">
+                    <a href="/" className="sidebar-link">
                       Link 2
                     </a>
                   </li>
@@ -102,20 +103,20 @@ const Sidebar = () => {
             </ul>
           </li>
           <li className="sidebar-item">
-            <a href="#" className="sidebar-link">
+            <a href="/" className="sidebar-link">
               <i className="lni lni-popup"></i>
               <span>Notification</span>
             </a>
           </li>
           <li className="sidebar-item">
-            <a href="#" className="sidebar-link">
+            <a href="/" className="sidebar-link">
               <i className="lni lni-cog"></i>
               <span>Setting</span>
             </a>
           </li>
         </ul>
         <div className="sidebar-footer">
-          <a href="#" className="sidebar-link">
+          <a href="/" className="sidebar-link">
             <i className="lni lni-exit"></i>
             <span>Logout</span>
           </a>
@@ -124,6 +125,7 @@ const Sidebar = () => {
       <div className="main p-3">
         <div className="text-center">
           <h1>Sidebar Bootstrap 5</h1>
+          <DragAndDrop />
         </div>
       </div>
     </div>

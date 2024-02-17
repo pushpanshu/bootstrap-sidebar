@@ -1,0 +1,7 @@
+.folders{
+    display: flex;
+    justify-content: space-between;
+}
+.folder{
+    border: 1px solid #ddd;
+}
